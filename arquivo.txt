@@ -1,1 +1,3 @@
 adicionando mais uma linha ao arquivo
+Teste de edição de arquivo existente.
+Para salvar, testei shift zz.
