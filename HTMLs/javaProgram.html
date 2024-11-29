@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java</title>
+    <title>Vetores</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      let vetor = [3, 7, 90, 54, 6, 1, 23, 88, 102, 647, 22, 11, 33];
+      let vetorMisto = [1, 2, "arroz", 3, 4, 'a', true, 9];
+      let maior = vetor[0];
+      let menor = vetor[0];
+      for(let i = 0; i < vetor.length; i++) {
+        if(vetor[i] > maior) {
+            maior = vetor[i];
+        }
+        if(vetor[i] < menor) {
+            menor = vetor[i];
+        }
+      }
+
+   // alert("O maior elemento é: " +  maior);
+   // alert("O menor elemento é: " +  menor );
+
+   for (let i = 0; i < vetor.length; i++) {
+    if (vetor[i] % 2 == 0) {
+    alert("O número " + vetor[i] + " é par! ");
+    }
+}
+
+for (let i = 0; i < vetorMisto.length; i++) {
+    alert("conteúdo: " + vetorMisto[i]);
+}
+
+  </script>
 </head>
 <body>
-
-  <script>
-    
-    let palavra, opcao;
-    
-    while (true) {
-    palavra = prompt("Digite uma palavra para verificar se ela é um palíndromo: ");
-    String palavra = scanner.nextLine();
-    }
-
-    palavra = palavra.replaceAll("\\s+", "").toLowerCase();
-    boolean ehPalindromo = true;
-      
-    for (int i = 0; i < palavra.length() / 2; i++) {
-    if (palavra.charAt(i) != palavra.charAt(palavra.length() - 1 - i)) {
-    ehPalindromo = false;
-    break;
-    }
-  }
-     
-    
-    if(palavra.equals(invertida)) {
-    alert("A palavra " + palavra " é um palíndromo.")
-    }
-    else{
-    alert("A palavra " + palavra " não é um palíndromo.")
-    }  
-      opcao = prompt("Deseja verificar outra palavra? S para Sim - N para não");
-  
-  </script>
-
-</body>
-
 </html>
